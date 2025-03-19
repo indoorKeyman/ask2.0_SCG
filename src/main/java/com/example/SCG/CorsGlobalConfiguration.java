@@ -35,7 +35,7 @@ public class CorsGlobalConfiguration {
             @Override
             public void addCorsMappings(CorsRegistry corsRegistry) {
                 corsRegistry.addMapping("/api/**")
-                        .allowedOrigins("http://43.201.219.118:3000") // 프론트엔드 주소
+                        .allowedOrigins("http://43.201.219.118:3000/") // 프론트엔드 주소
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
                         .allowCredentials(true);
